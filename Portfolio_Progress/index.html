@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shane Balbuena Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/600f52df9f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -12,21 +13,207 @@
     <div class="container">
         <nav>
             <img src="assests/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Photographer</p>
+            <p>Artist</p>
             <h1>Hi, I'm <span>Shane</span> Balbuena</h1>
         </div>
       </div>  
  </div>
- 
-    
+ <!-- -----about------ -->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assests/Picture.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a passionate student Artist with years of experience creating arts and capturing pictures. My goal is to create stunning visuals that tell a story and evoke emotion.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Photographer</span><br>Freelance Photographer, Any types of Photoshoot, Events Coverage</li>
+                        <li><span>Traditional Artist</span><br>Creating realistic portraits using graphite and charcoal pencils</li>
+                        <li><span>Digital Artist</span><br>Creating digital arts</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-Present</span><br>BSIT-Animation 3 and Animus Photographer</li>
+                        <li><span>2018-Present</span><br>Freelance Traditional Artist</li>
+                        <li><span>2022-Present</span><br>Freelance Digital Artist</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>San Isidro Elementary School</li>
+                        <li><span>2020</span><br>La Consolacion College Iriga</li>
+                        <li><span>2022</span><br>Zeferino Arroyo Senior High School</li>
+                        <li><span>Present</span><br>Bicol University Polangui</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-- -----service---- -->
+<div id="services"></div>
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-camera"></i>
+                <h2>Photography</h2>
+                <p>Offering Pre-Debut, Prenup, Christening, Birthday,  
+                Wedding, and Event Photography</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <h2>Traditional Art</h2>
+                <p>Offering Realistic charcoal drawings</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pencil"></i>
+                <h2>Digital Art</h2>
+                <p>Offering digital arts </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+<!-- ------------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assests/car.JPG">
+                <div class="layer">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assests/boat.JPG">
+            </div>
+            <div class="work">
+                <img src="assests/toy.JPG">
+            </div>
+            <div class="work">
+                <img src="assests/jimin.jpg">
+            </div>
+            <div class="work">
+                <img src="assests/monalisa.jpg">
+            </div>
+            <div class="work">
+                <img src="assests/chanyeol.jpg">
+            </div>
+            <div class="work">
+                <img src="assests/tanjiro.jpg">
+            </div>
+            <div class="work">
+                <img src="assests/tree.jpg">
+            </div>
+            <div class="work">
+                <img src="assests/closet.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------Contact------------- -->
+<div id="contact">
+    <div class="conatainer">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> balbuena.shane.villoso@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 09123456799</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="assests/cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Greatstack</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwUWjGDvDc20wyqBeuVjzm-5JUYxM6lYPTEMiQITe9rsBRlx2_2DUoLDlg-A4PaOZYnVA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000) 
+            form.reset()      
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
